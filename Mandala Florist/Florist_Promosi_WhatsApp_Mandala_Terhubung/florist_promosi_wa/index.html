@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1d8f4e">
+    <title>Mandala Florist — Papan Bunga & Florist Makassar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="brand" href="#beranda">
+                <span class="brand-mark">✿</span>
+                <span>
+                    <strong>Mandala Florist</strong>
+                    <small>Makassar</small>
+                </span>
+            </a>
+            <nav>
+                <a href="#beranda">Beranda</a>
+                <a href="#produk">Produk</a>
+                <a href="#cara-pesan">Cara Pesan</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn" aria-label="Keranjang">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <a class="nav-wa" href="#produk">Pesan Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="beranda">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">PAPAN BUNGA • FLORIST • MAKASSAR</span>
+                    <h1>Sampaikan ucapan terbaik dengan <span>papan bunga yang berkesan.</span></h1>
+                    <p>Pilih desain sesuai kebutuhan, tambahkan ke keranjang, lalu checkout dengan mudah. Bisa kirim via WhatsApp, Email, atau Telepon.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#produk">Lihat Pilihan</a>
+                        <a class="btn btn-outline" href="#cara-pesan">Cara Pesan</a>
+                    </div>
+                    <div class="hero-points">
+                        <span>✓ Keranjang belanja</span>
+                        <span>✓ Checkout fleksibel</span>
+                        <span>✓ Cocok untuk berbagai acara</span>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <img src="assets/papan-bunga-2.jpg" alt="Papan bunga ucapan selamat dan sukses">
+                    <div class="hero-badge">
+                        <strong>Mulai Rp350.000</strong>
+                        <span>Siap dipilih & dipesan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PRODUK ===== -->
+        <section class="section products" id="produk">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">PILIHAN PAPAN BUNGA</span>
+                        <h2>Pesan sesuai kebutuhanmu</h2>
+                    </div>
+                    <p>Tambahkan produk ke keranjang, lalu lanjutkan ke checkout. Pesanan bisa dikirim via WhatsApp, Email, atau Telepon.</p>
+                </div>
+
+                <div class="filter-row">
+                    <button class="filter active" data-filter="semua">Semua</button>
+                    <button class="filter" data-filter="350000">Rp350 Ribu</button>
+                    <button class="filter" data-filter="750000">Rp750 Ribu</button>
+                    <button class="filter" data-filter="1000000">Rp1 Juta</button>
+                    <button class="filter" data-filter="1500000">Rp1,5 Juta+</button>
+                </div>
+
+                <div class="product-grid" id="productGrid"></div>
+            </div>
+        </section>
+
+        <!-- ===== CARA PESAN ===== -->
+        <section class="section how" id="cara-pesan">
+            <div class="container">
+                <div class="section-heading centered">
+                    <span class="eyebrow">MUDAH DAN CEPAT</span>
+                    <h2>Cara melakukan pemesanan</h2>
+                    <p>Hanya beberapa langkah untuk menyelesaikan pesanan Anda.</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <span>01</span>
+                        <h3>Pilih produk</h3>
+                        <p>Pilih papan bunga dan tambahkan ke keranjang sesuai kebutuhan acara.</p>
+                    </div>
+                    <div class="step">
+                        <span>02</span>
+                        <h3>Isi detail</h3>
+                        <p>Tulis jumlah, nama penerima, ucapan, lokasi, dan tanggal pemasangan.</p>
+                    </div>
+                    <div class="step">
+                        <span>03</span>
+                        <h3>Checkout</h3>
+                        <p>Kirim pesanan via WhatsApp, Email, atau Telepon sesuai preferensi Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CHECKOUT ===== -->
+        <section class="section order-section" id="order">
+            <div class="container order-grid">
+                <div>
+                    <span class="eyebrow">CHECKOUT</span>
+                    <h2>Siapkan detail pesananmu</h2>
+                    <p>Isi form di samping. Pesanan bisa dikirim via WhatsApp, Email, atau Telepon.</p>
+
+                    <div class="order-summary" id="orderSummary">
+                        <h3>Ringkasan Pesanan</h3>
+                        <div id="summaryItems"><p class="empty-summary">Keranjang masih kosong.</p></div>
+                        <div class="summary-total" id="summaryTotal">Total: Rp0</div>
+                    </div>
+                </div>
+
+                <form id="orderForm" class="order-form">
+                    <label>Nama pemesan
+                        <input id="customerName" type="text" placeholder="Nama Anda" required>
+                    </label>
+                    <label>Nomor WhatsApp
+                        <input id="customerPhone" type="tel" placeholder="08xxxxxxxxxx">
+                    </label>
+                    <label>Email
+                        <input id="customerEmail" type="email" placeholder="email@contoh.com">
+                    </label>
+                    <label>Nama / acara
+                        <input id="recipient" type="text" placeholder="Contoh: Wisuda / Selamat & Sukses" required>
+                    </label>
+                    <label>Lokasi pengiriman
+                        <textarea id="location" rows="3" placeholder="Alamat lengkap pemasangan" required></textarea>
+                    </label>
+                    <label>Ucapan
+                        <textarea id="message" rows="4" placeholder="Tulis ucapan yang ingin dicantumkan"></textarea>
+                    </label>
+                    <label>Metode pengiriman pesanan
+                        <select id="sendMethod">
+                            <option value="wa">WhatsApp</option>
+                            <option value="email">Email</option>
+                            <option value="telp">Telepon</option>
+                        </select>
+                    </label>
+
+                    <div class="checkout-actions">
+                        <button class="btn btn-primary" type="submit">Kirim Pesanan</button>
+                        <button class="btn btn-outline" type="button" id="clearCartBtn">Kosongkan Keranjang</button>
+                    </div>
+                    <small class="form-note">Nomor WhatsApp toko dapat diubah pada variabel <b>WHATSAPP_NUMBER</b> di file script.js.</small>
+                </form>
+            </div>
+        </section>
+
+        <!-- ===== KONTAK ===== -->
+        <section class="section contact" id="kontak">
+            <div class="container contact-box">
+                <div>
+                    <span class="eyebrow">BUTUH BANTUAN?</span>
+                    <h2>Konsultasikan desain dan ucapanmu.</h2>
+                    <p>Jika bingung memilih ukuran atau desain, langsung hubungi florist melalui WhatsApp, Email, atau Telepon.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="btn btn-light" id="contactWa" href="#">Chat WhatsApp</a>
+                    <a class="btn btn-light" id="contactEmail" href="#">Kirim Email</a>
+                    <a class="btn btn-light" id="contactTelp" href="#">Telepon</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container footer-inner">
+            <div>
+                <strong>Mandala Florist</strong>
+                <span>Papan bunga & kebutuhan ucapan di Makassar.</span>
+            </div>
+            <span>© 2026 Mandala Florist</span>
+        </div>
+    </footer>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast" id="toast">Produk ditambahkan ke keranjang.</div>
+
+    <!-- ===== CART DRAWER ===== -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3>Keranjang</h3>
+            <button class="cart-close" id="cartClose" aria-label="Tutup">×</button>
+        </div>
+        <div class="cart-drawer-body" id="cartDrawerBody">
+            <p class="empty-cart">Keranjang masih kosong.</p>
+        </div>
+        <div class="cart-drawer-footer">
+            <div class="cart-total" id="cartTotal">Total: Rp0</div>
+            <a class="btn btn-primary btn-full" href="#order" id="goCheckout">Lanjut ke Checkout</a>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
