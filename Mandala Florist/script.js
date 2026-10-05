@@ -7,13 +7,13 @@ const STORE_EMAIL = "order@mandalaflorist.com";
 const STORE_PHONE = "+62811444349";
 
 const products = [
-    { id: 1, name: "Duka Cita Flowers Board", price: 350000, image: "assets/papan-bunga-1.jpg", tag: "Mulai Rp350 Ribu", desc: "Papan bunga duka cita dengan rangkaian elegan dan penuh empati." },
+    { id: 1, name: "Happy Wedding Flowers Board", price: 350000, image: "assets/papan-bunga-1.jpg", tag: "Mulai Rp350 Ribu", desc: "Papan bunga duka cita dengan rangkaian elegan dan penuh empati." },
     { id: 2, name: "Selamat & Sukses Flowers Board", price: 2000000, image: "assets/papan-bunga-2.jpg", tag: "Premium", desc: "Papan bunga premium untuk ucapan selamat dan sukses." },
-    { id: 3, name: "Selamat & Sukses Flowers Board", price: 2000000, image: "assets/papan-bunga-3.jpg", tag: "Premium", desc: "Desain mewah dengan bunga pilihan untuk momen istimewa." },
-    { id: 4, name: "Selamat & Sukses Flowers Board", price: 1500000, image: "assets/papan-bunga-4.jpg", tag: "Pilihan Favorit", desc: "Papan bunga favorit dengan komposisi bunga segar." },
-    { id: 5, name: "Selamat & Sukses Flowers Board", price: 1000000, image: "assets/papan-bunga-5.jpg", tag: "Terlaris", desc: "Pilihan terlaris untuk berbagai acara formal." },
-    { id: 6, name: "Selamat & Sukses Flowers Board", price: 750000, image: "assets/papan-bunga-6.jpg", tag: "Populer", desc: "Papan bunga populer dengan harga terjangkau." },
-    { id: 7, name: "Selamat & Sukses Flowers Board", price: 500000, image: "assets/papan-bunga-7.jpg", tag: "Hemat", desc: "Pilihan hemat untuk ucapan yang tetap berkesan." },
+    { id: 3, name: "Happy Wedding Flowers Board", price: 2000000, image: "assets/papan-bunga-3.jpg", tag: "Premium", desc: "Desain mewah dengan bunga pilihan untuk momen istimewa." },
+    { id: 4, name: "Happy Wedding Flowers Board", price: 1500000, image: "assets/papan-bunga-4.jpg", tag: "Pilihan Favorit", desc: "Papan bunga favorit dengan komposisi bunga segar." },
+    { id: 5, name: "Happy Wedding Flowers Board", price: 1000000, image: "assets/papan-bunga-5.jpg", tag: "Terlaris", desc: "Pilihan terlaris untuk berbagai acara formal." },
+    { id: 6, name: "Happy Wedding Flowers Board", price: 750000, image: "assets/papan-bunga-6.jpg", tag: "Populer", desc: "Papan bunga populer dengan harga terjangkau." },
+    { id: 7, name: "Happy Wedding Flowers Board", price: 500000, image: "assets/papan-bunga-7.jpg", tag: "Hemat", desc: "Pilihan hemat untuk ucapan yang tetap berkesan." },
     { id: 8, name: "Selamat & Sukses Flowers Board", price: 350000, image: "assets/papan-bunga-8.jpg", tag: "Hemat", desc: "Papan bunga ekonomis untuk berbagai kebutuhan." }
 ];
 
